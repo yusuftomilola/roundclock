@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "ACaslonPro";
+  src: url("/public/fonts/ACaslonPro-Regular.otf") format("opentype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --toastify-color-success: #fedc44;
+    --toastify-icon-color-success: var(--toastify-color-success);
+    scroll-behavior: smooth;
+  }
+}
+
+.acaslonpro {
+  font-family: "ACaslonPro", "sans-serif";
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f2f2f280;
+}
+
+/* Hide scrollbar but keep scrolling functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.punctualityGradient {
+  background: linear-gradient(270deg, white, #e8f3f1);
+}
+
+.addNewSpaceGradient {
+  background: linear-gradient(270deg, #fbf3d2, #e8f3f1);
+}
+
+.paymentGradient {
+  background: linear-gradient(180deg, #f0f0f0, #fff);
+}
